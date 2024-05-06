@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Stock - PreEntrega3+Montealgre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Control de Stock - PreEntrega3+Montealgre</h1>
+        <div class="cajaControlStock">
+            <div class="cajaCategorias">
+                <div class="categoriaA">
+                    <div class="infoCat">
+                        <p>Categoría <span class="importante">A</span> = Productos de <span class="importante">alta</span> rotación</p>
+                        <p>Abastecimiento menor o igual al <span class="importante">60%</span> del stock máximo</p>
+                    </div>
+                    <div class="productos">
+                        <div class="producto">
+                            <p>Producto ID: 000001 <input type="number" id="prod_000001" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 1000 un)</p>
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000002 <input type="number" id="prod_000002" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 800 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000003 <input type="number" id="prod_000003" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 1100 un)</p>
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000004 <input type="number" id="prod_000004" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 900 un)</p>                       
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000005 <input type="number" id="prod_000005" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 1300 un)</p>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="categoriaB">
+                    <div class="infoCat">
+                        <p>Categoría <span class="importante">B</span> = Productos de <span class="importante">media</span> rotación</p>
+                        <p>Abastecimiento menor o igual al <span class="importante">40%</span> del stock máximo</p>
+                    </div>
+                    <div class="productos">
+                        <div class="producto">
+                            <p>Producto ID: 000006 <input type="number" id="prod_000006" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 700 un)</p>                       
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000007 <input type="number" id="prod_000007" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 750 un)</p>                       
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000008 <input type="number" id="prod_000008" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 600 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000009 <input type="number" id="prod_000009" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 500 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000010 <input type="number" id="prod_000010" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 650 un)</p>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="categoriaC">
+                    <div class="infoCat">
+                        <p>Categoría <span class="importante">C</span> = Productos de <span class="importante">baja</span> rotación</p>
+                        <p>Abastecimiento menor o igual al <span class="importante">25%</span> del stock máximo</p>
+                    </div>
+                    <div class="productos">
+                        <div class="producto">
+                            <p>Producto ID: 000011 <input type="number" id="prod_000011" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 450 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000012 <input type="number" id="prod_000012" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 400 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000013 <input type="number" id="prod_000013" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 300 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000014 <input type="number" id="prod_000014" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 350 un)</p>                        
+                        </div>
+                        <div class="producto">
+                            <p>Producto ID: 000015 <input type="number" id="prod_000015" class="stockProducto" placeholder="Ingrese el stock actual"> (stockMax 200 un)</p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajaBoton">
+                <div class="botones">
+                    <button id="verificarStockBtn">Verificar Stock</button>
+                    <button id="limpiarBtn">Limpiar</button>
+                </div>
+                <div id="resultados"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>    
+</body>
+</html>
+
